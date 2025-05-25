@@ -1,7 +1,13 @@
 // This script prints the addition of 2 integers
 
-function add(a,b){
-    console.log(a+b);
+const arguments = process.argv;
+
+function add(a, b){
+    console.log(parseInt(a) + parseInt(b));
 }
 
-add(4,6);
+add(arguments[2], arguments[3]);
+
+
+
+
